@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <section class="data-container"></section>
+
+    <template class="data-template">
+        <article>
+            <h2></h2>
+            <p class="data-github"></p>
+        </article>
+    </template>
+
+    <script>
+        document.addEventListener("DomContentLoaded", hentJson);
+
+       async function hentJson(){
+            let hentJson = await fetch("personliste.json");
+           console.log(myJson);
+        }
+
+    </script>
+
+</body>
+
+</html>
